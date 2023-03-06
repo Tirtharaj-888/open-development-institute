@@ -1,0 +1,168 @@
+/* HEADER-CSS */
+header{
+  background-color: green;
+  height: 4em;
+  margin: -1.5em -1em 0em -1em;
+}
+
+nav{
+  font-size: 20px;
+}
+nav a{
+  text-decoration: none;
+}
+
+nav > ul{
+  transform: translateX(300px);
+}
+
+nav > ul > li:hover{
+  background-color: limegreen;
+  transition-duration: 0.4s;
+}
+
+#call-btn{
+  transform: translateX(500px);
+  margin-top: 0.7em;
+  font-size: 20px;
+  padding: 0em 1em 0em 1em;
+  height: 40px;
+  width: 100px;
+}
+
+#call-btn:hover{
+  background-color: whitesmoke;
+  transition-duration: 0.4s;
+}
+
+ul > li{
+  list-style: none;
+  text-align: center;
+  width: 5em;
+  float:left;
+  padding: 1em 1em 1em 1em;
+}
+
+#drop-menu > li{
+  float:left;
+  padding: 1em 1em 1em 1em;
+  list-style: none;
+}
+
+#drop-item:hover #drop-menu{
+  display:block;
+}
+
+#drop-menu{
+  display: none;
+  position: relative;
+  background-color: limegreen;
+  transform: translateX(-20px);
+  width: 5em;
+  z-index: 1;
+}
+
+#drop-menu > li{
+  float:none;
+  padding: 1.2em 0em 0.5em em;
+  text-align: center;
+  transform: translateX(-40px);
+}
+
+#drop-menu > li:hover{
+  background-color: lightgreen;
+  transition-duration: 0.4s;
+}
+/* HEADER-CSS */
+
+/*BODY-CSS */
+body{
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+/*TESTIMONIAL-CSS*/
+/* .testimonial-slider {
+  display: flex;
+  width: 1050px;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+ .testimonial-card {
+  scroll-snap-align: start;
+  flex: 0 0 80%;
+  margin-right: 2rem;
+  padding: 1rem;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.testimonial-image img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 1024px) {
+  .testimonial-card {
+    flex: 0 0 40%;
+    margin-right: 4rem;
+  }
+}  */
+
+/*FOOTER-CSS */
+footer {
+  transform: translateY(500%);
+  width: 100vw;
+  background-color: green;
+  font-size: 14px;
+}
+
+.container {
+  max-width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-content {
+  text-align: center;
+}
+
+.footer-content h3 {
+  margin-bottom: 10px;
+}
+
+.footer-content p {
+  color: #555;
+}
+
+/*ACCOM-CAROUSEL-CSS*/
+.accomplishments-carousel{
+  /* border: 1px solid purple; */
+  transform: translateX(80%) translateY(80%);
+  width: 500px;
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -15;
+  animation: slider 20s infinite linear;
+}
+
+@keyframes slider{
+  
+  0%{background-image: url('image/accom-1.jpg');z-index: -2;}
+  25%{background-image: url('image/accom-2.jfif');z-index: -2;}
+  50%{background-image: url('image/accom-3.png');z-index: -12;}
+  75%{background-image: url('image/accom-4.jfif');z-index: -12;}
+}
