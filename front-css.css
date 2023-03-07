@@ -79,6 +79,7 @@ ul > li{
 body{
   overflow-x: hidden;
   overflow-y: scroll;
+  width: 100vw;
 }
 /*TESTIMONIAL-CSS*/
 /* .testimonial-slider {
@@ -121,7 +122,7 @@ body{
 
 /*FOOTER-CSS */
 footer {
-  transform: translateY(500%);
+  transform: translateX(-0.85%) translateY(500%);
   width: 100vw;
   background-color: green;
   font-size: 14px;
@@ -149,20 +150,33 @@ footer {
 
 /*ACCOM-CAROUSEL-CSS*/
 .accomplishments-carousel{
-  /* border: 1px solid purple; */
   transform: translateX(80%) translateY(80%);
   width: 500px;
   height: 300px;
   background-size: cover;
   background-repeat: no-repeat;
   z-index: -15;
-  animation: slider 20s infinite linear;
+  background-image: url('image/accom-1.jpg');
+  background-size: 100% 100%;
+  box-shadow: rgba(149,157,165,0.2) 0px 8px 24px;
+  animation: changeImage 15s linear infinite;
 }
 
-@keyframes slider{
-  
-  0%{background-image: url('image/accom-1.jpg');z-index: -2;}
-  25%{background-image: url('image/accom-2.jfif');z-index: -2;}
-  50%{background-image: url('image/accom-3.png');z-index: -12;}
-  75%{background-image: url('image/accom-4.jfif');z-index: -12;}
+@keyframes changeImage{
+  0%{
+    background-image: url('image/accom-1.jpg')
+  }
+  30%{
+    background-image: url('image/accom-2.jfif')
+  }
+  70%{
+    background-image: url('image/accom-3.png')
+  }
+  75%{
+    background-image: url('image/accom-4.jfif')
+  }
+  100%{
+    background-image: url('image/accom-1.jpg')
+  }
 }
+
