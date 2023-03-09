@@ -82,6 +82,7 @@ body{
   background-size: cover; */
   overflow-x: hidden;
   overflow-y: scroll;
+  width: 100vw;
 }
 
 .course-cards-box{
