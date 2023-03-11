@@ -65,7 +65,7 @@ nav > ul > li:hover{
 
 #drop-menu > li{
   float:none;
-  padding: 1.2em 0em 0.5em em;
+  padding: 1.2em 0.1em 0.5em 0.1em;
   text-align: center;
   transform: translateX(-40px);
 }
@@ -75,6 +75,7 @@ nav > ul > li:hover{
   transition-duration: 0.4s;
 }
 /* HEADER-CSS */
+
 
 /* BODY-CSS */
 body{
@@ -86,37 +87,25 @@ body{
   width: 100vw;
 }
 
-.course-cards-box{
-  display:flex;
-  border: 1px solid red;
-  width: 750px;
-  position: absolute;
-  transform: translateX(70%) translateY(75%);
+/* COURSE-BODY-CSS */
+.course-body{
+  display:block;
+  padding: 0.1em 0em 0em 0.2em;
+  position: relative;
+  border: 1px solid brown;
+  transform: translateX(15%) translateY(50%);
+  width: 800px;
+  height: 600px;
   z-index: -1;
-  align-items: bottom;
 }
-.course-card{
-  width: 150px;
-  height: 200px;
-  text-align:center;
-  display:inline-block;
-  border: 1px solid sandybrown;
-  margin: 0.2em 0.2em 0.2em 0.2em;
-}
-
-.card-image{
-  width: 130px;
+.download-section{
+  border: 1px solid brown;
+  width: 800px;
   height: 100px;
-  margin: 0.2em 0.2em 0.2em 0.35em;
+  transform: translateX(15%) translateY(300%);
 }
-img{
-  width: 100%;
-  height: 100%;
-  object-fit:fill
-}
-.course-card > h2{
-  font-size: 18px;
-  padding: 0em 0.05em 0em 0.05em;
+.download-section > h2{
+  margin: 0.1em 0em 0em 0.2em;
 }
 
 /*FOOTER-CSS */

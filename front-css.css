@@ -3,6 +3,7 @@ header{
   background-color: green;
   height: 4em;
   margin: -1.5em -1em 0em -1em;
+  
 }
 
 nav{
@@ -35,7 +36,7 @@ nav > ul > li:hover{
   transition-duration: 0.4s;
 }
 
-ul > li{
+.nav-ul > li{
   list-style: none;
   text-align: center;
   width: 5em;
@@ -47,6 +48,8 @@ ul > li{
   float:left;
   padding: 1em 1em 1em 1em;
   list-style: none;
+  width: 6.8em;
+  text-align: center;
 }
 
 #drop-item:hover #drop-menu{
@@ -59,7 +62,6 @@ ul > li{
   background-color: limegreen;
   transform: translateX(-20px);
   width: 5em;
-  z-index: 1;
 }
 
 #drop-menu > li{
@@ -81,49 +83,14 @@ body{
   overflow-y: scroll;
   width: 100vw;
 }
-/*TESTIMONIAL-CSS*/
-/* .testimonial-slider {
-  display: flex;
-  width: 1050px;
-  flex-wrap: nowrap;
-  overflow-x: scroll;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
-}
-
- .testimonial-card {
-  scroll-snap-align: start;
-  flex: 0 0 80%;
-  margin-right: 2rem;
-  padding: 1rem;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.testimonial-image img {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-@media screen and (min-width: 1024px) {
-  .testimonial-card {
-    flex: 0 0 40%;
-    margin-right: 4rem;
-  }
-}  */
 
 /*FOOTER-CSS */
 footer {
-  transform: translateX(-0.85%) translateY(500%);
-  width: 100vw;
+  position: absolute;
+  transform: translateX(-0.85%);
+  width: 100%;
+  bottom: 0;
+  height: 6em;
   background-color: green;
   font-size: 14px;
 }
@@ -155,20 +122,17 @@ footer {
   position: relative;
   width: 500px;
   height: 300px;
-  z-index: -15;
+  z-index: 1;
   box-shadow: rgba(149,157,165,0.2) 0px 8px 24px;
 }
-
 .movie{
+  display: flex;
+  position: absolute;
   width: 100%;
   height: 100%;
-  position:absolute;
-  display: flex;
+  z-index: -1;
+  background-size: 100% 100%;
   animation: rtlSlider 10s linear infinite;
-}
-img{
-  position: relative;
-  max-width: 80%
 }
 
 
