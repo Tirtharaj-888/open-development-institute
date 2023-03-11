@@ -65,7 +65,7 @@ nav > ul > li:hover{
 
 #drop-menu > li{
   float:none;
-  padding: 1.2em 0em 0.5em em;
+  padding: 1.2em 0em 0.5em 0.2em;
   text-align: center;
   transform: translateX(-40px);
 }
